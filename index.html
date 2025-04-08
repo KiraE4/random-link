@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Случайный опрос</title>
+</head>
+<body>
+    <a href="#" onclick="redirectRandom()">Пройти опрос</a>
+
+    <script>
+    function redirectRandom() {
+        const links = [
+            'https://forms.gle/863tLCFUpSuo7A8z5',
+            'https://forms.gle/9RfiWjm5J5Bs3RM18'
+        ];
+        window.location.href = links[Math.floor(Math.random() * 2)];
+    }
+    </script>
+</body>
+</html>
